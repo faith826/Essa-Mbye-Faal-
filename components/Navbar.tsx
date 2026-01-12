@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useRef } from 'react';
 import { ViewType } from '../types';
 import Logo from './Logo';
@@ -9,14 +10,14 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentView }) => {
   const [scrolled, setScrolled] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>(null);
+  const [openDropdownId, setOpenDropdownId] = useState<string | null>(null);
+  const navbarRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
     const handleClickOutside = (event: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-        setDropdownOpen(false);
+      if (navbarRef.current && !navbarRef.current.contains(event.target as Node)) {
+        setOpenDropdownId(null);
       }
     };
 
@@ -30,21 +31,36 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentView }) => {
 
   const navItems = [
     { id: 'about', label: 'About' },
+    { id: 'agriculture', label: 'Agriculture' },
+    { id: 'infrastructure', label: 'Infrastructure', isDropdown: true },
     { id: 'contribute', label: 'Contribute', isDropdown: true },
     { id: 'news', label: 'News' },
     { id: 'contact', label: 'Contact' },
-    { id: 'agriculture', label: 'About Agriculture' },
-    { id: 'infrastructure', label: 'Infrastructure' },
   ];
 
-  const submenuItems = [
-    { id: 'donate', label: 'Donate' },
-    { id: 'join-group', label: 'Join Our Group' },
-    { id: 'volunteer', label: 'Volunteering' },
-  ];
+  const submenus: Record<string, { id: string; label: string }[]> = {
+    contribute: [
+      { id: 'donate', label: 'Donate' },
+      { id: 'join-group', label: 'Join Our Group' },
+      { id: 'volunteer', label: 'Volunteering' },
+    ],
+    infrastructure: [
+      { id: 'infrastructure', label: 'Overview' },
+      { id: 'infrastructure', label: 'Road Networks' },
+      { id: 'infrastructure', label: 'Digital Transformation' },
+      { id: 'infrastructure', label: 'Public Utilities' },
+    ]
+  };
+
+  const isActive = (itemId: string, isDropdown?: boolean) => {
+    if (isDropdown) {
+      return submenus[itemId]?.some(sub => sub.id === currentView);
+    }
+    return currentView === itemId;
+  };
 
   return (
-    <nav className={`fixed top-0 w-full z-40 border-b border-white/5 transition-all duration-300 ${scrolled ? 'glass h-16' : 'bg-transparent h-24'}`}>
+    <nav ref={navbarRef} className={`fixed top-0 w-full z-40 border-b border-white/5 transition-all duration-300 ${scrolled ? 'glass h-16' : 'bg-transparent h-24'}`}>
       <div className="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
         <button onClick={() => onNavigate('home')} className="flex items-center gap-4 group text-left">
           <Logo className="w-10 h-10 md:w-12 md:h-12" />
@@ -59,34 +75,33 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentView }) => {
             item.isDropdown ? (
               <div 
                 key={item.id} 
-                ref={dropdownRef}
                 className="relative h-full flex items-center"
-                onMouseEnter={() => setDropdownOpen(true)}
+                onMouseEnter={() => setOpenDropdownId(item.id)}
+                onMouseLeave={() => setOpenDropdownId(null)}
               >
                 <button
                   className={`hover:text-white transition-all uppercase relative py-2 flex items-center gap-1 ${
-                    submenuItems.some(sub => sub.id === currentView) ? 'text-white' : ''
+                    isActive(item.id, true) ? 'text-white' : ''
                   }`}
                 >
                   {item.label}
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-                  {submenuItems.some(sub => sub.id === currentView) && (
+                  {isActive(item.id, true) && (
                     <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.5)]"></span>
                   )}
                 </button>
 
                 {/* Dropdown Menu */}
-                {dropdownOpen && (
+                {openDropdownId === item.id && (
                   <div 
-                    className="absolute top-full left-0 w-48 bg-slate-900 border border-white/10 rounded-xl shadow-2xl py-2 animate-in fade-in slide-in-from-top-2 duration-200"
-                    onMouseLeave={() => setDropdownOpen(false)}
+                    className="absolute top-full left-0 w-52 bg-slate-900 border border-white/10 rounded-xl shadow-2xl py-2 animate-in fade-in slide-in-from-top-2 duration-200"
                   >
-                    {submenuItems.map(sub => (
+                    {submenus[item.id].map((sub, idx) => (
                       <button
-                        key={sub.id}
+                        key={`${sub.id}-${idx}`}
                         onClick={() => {
                           onNavigate(sub.id as ViewType);
-                          setDropdownOpen(false);
+                          setOpenDropdownId(null);
                         }}
                         className={`w-full text-left px-4 py-3 text-[10px] font-bold tracking-wider uppercase hover:bg-white/5 transition-colors ${
                           currentView === sub.id ? 'text-blue-400' : 'text-slate-400'
