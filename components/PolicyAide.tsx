@@ -1,4 +1,3 @@
-
 import React, { useState, useRef, useEffect } from 'react';
 import { Message } from '../types';
 import { getAIPolicyResponse } from '../services/geminiService';
@@ -9,7 +8,7 @@ interface PolicyAideProps {
 
 const PolicyAide: React.FC<PolicyAideProps> = ({ onClose }) => {
   const [messages, setMessages] = useState<Message[]>([
-    { role: 'assistant', content: 'Hello! I am the Appiah Kubi Development Aide. How can I help you understand our roadmap for a prosperous community?' }
+    { role: 'assistant', content: 'Hello! I am the App Sobeyaa Development Aide. How can I help you understand Essa Mbye Faal\'s roadmap for a prosperous community?' }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -87,7 +86,7 @@ const PolicyAide: React.FC<PolicyAideProps> = ({ onClose }) => {
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder="Ask a question..."
+            placeholder="Ask about our manifesto..."
             className="flex-1 bg-slate-950 border border-white/10 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:ring-1 focus:ring-blue-500 placeholder:text-slate-600"
           />
           <button 
@@ -99,7 +98,7 @@ const PolicyAide: React.FC<PolicyAideProps> = ({ onClose }) => {
           </button>
         </div>
         <p className="mt-2 text-[8px] text-center text-slate-600 font-medium uppercase tracking-widest">
-          Consulting Appiah Kubi's Development Manifesto
+          Consulting the App Sobeyaa Development Manifesto
         </p>
       </form>
     </div>

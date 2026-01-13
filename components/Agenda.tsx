@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { PolicyCardProps } from '../types';
 
@@ -57,7 +56,7 @@ const Agenda: React.FC = () => {
           <PolicyCard 
             title="Agriculture"
             description="Subsidizing fertilizers, modernizing farming tools, and opening new markets for local produce to ensure food security."
-            colorClass="from-green-500/10"
+            colorClass="from-[#54b4ff]/10"
             icon={<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8a8 8 0 0 1-10 10Z"/><path d="M11 20c-4 0-7-3-7-7 0-4.5 3.5-7 6-7"/><path d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path d="M12 10V16"/></svg>}
           />
           <PolicyCard 

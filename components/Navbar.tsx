@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import { ViewType } from '../types';
 import Logo from './Logo';
@@ -60,13 +59,20 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentView }) => {
   };
 
   return (
-    <nav ref={navbarRef} className={`fixed top-0 w-full z-40 border-b border-white/5 transition-all duration-300 ${scrolled ? 'glass h-16' : 'bg-transparent h-24'}`}>
+    <nav ref={navbarRef} className={`fixed top-0 w-full z-40 border-b border-white/5 transition-all duration-500 h-24 ${scrolled ? 'glass' : 'bg-transparent'}`}>
       <div className="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
-        <button onClick={() => onNavigate('home')} className="flex items-center gap-4 group text-left">
-          <Logo className="w-10 h-10 md:w-12 md:h-12" />
+        <button onClick={() => onNavigate('home')} className="flex items-center gap-4 group text-left outline-none">
+          {/* Fixed Logo Size */}
+          <Logo className="w-14 h-14 md:w-16 md:h-16 shrink-0" />
+          
+          {/* Static Branding Section */}
           <div className="flex flex-col">
-            <span className="text-base font-black tracking-tight text-white uppercase leading-none">ESSA MBYE FAAL</span>
-            <span className="text-[8px] text-blue-500 font-black tracking-[0.3em] uppercase mt-1">FOR PRESIDENT 2025</span>
+            <span className="text-base md:text-lg font-black tracking-tight text-white uppercase leading-none whitespace-nowrap">
+              ESSA MBYE FAAL
+            </span>
+            <span className="text-[8px] md:text-[9px] text-[#54b4ff] font-black tracking-[0.3em] uppercase mt-1.5 whitespace-nowrap">
+              FOR PRESIDENT 2025
+            </span>
           </div>
         </button>
 

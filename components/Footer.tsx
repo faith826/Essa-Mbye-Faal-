@@ -55,10 +55,10 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-10 mb-16">
           <div className="col-span-2">
             <button onClick={() => onNavigate('home')} className="flex items-center gap-4 mb-6 group text-left">
-              <Logo className="w-10 h-10" />
+              <Logo className="w-16 h-16 md:w-20 md:h-20" />
               <div className="flex flex-col">
-                <span className="text-sm font-black tracking-tight text-white uppercase">ESSA MBYE FAAL</span>
-                <span className="text-[7px] text-blue-500 font-black tracking-[0.2em] uppercase">PRESIDENTIAL CAMPAIGN</span>
+                <span className="text-sm md:text-base font-black tracking-tight text-white uppercase">ESSA MBYE FAAL</span>
+                <span className="text-[7px] md:text-[8px] text-blue-500 font-black tracking-[0.2em] uppercase">PRESIDENTIAL CAMPAIGN</span>
               </div>
             </button>
             <p className="text-slate-500 text-[10px] max-w-xs leading-relaxed font-medium uppercase tracking-widest mb-8">

@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Agriculture: React.FC = () => {
@@ -7,7 +6,7 @@ const Agriculture: React.FC = () => {
       title: "Smart Farming",
       description: "Implementing drone technology and sensor-based irrigation to maximize crop yields with minimal resource waste.",
       icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 18V6"/><path d="m5 13 7-7 7 7"/><path d="M4 22h16"/></svg>,
-      color: "text-green-400"
+      color: "text-[#54b4ff]"
     },
     {
       title: "Food Security",
@@ -28,7 +27,7 @@ const Agriculture: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-green-500/20 bg-green-500/5 text-green-400 text-[10px] font-bold tracking-widest uppercase mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#54b4ff]/20 bg-[#54b4ff]/5 text-[#54b4ff] text-[10px] font-bold tracking-widest uppercase mb-6">
               Sustainable Growth
             </div>
             <h2 className="text-3xl md:text-5xl font-semibold text-white tracking-tight mb-6">Modernizing Our Agriculture</h2>
@@ -37,24 +36,24 @@ const Agriculture: React.FC = () => {
             </p>
             <div className="flex flex-wrap gap-4">
               <div className="flex items-center gap-2 text-xs font-semibold text-slate-200">
-                <span className="w-1.5 h-1.5 rounded-full bg-green-500"></span>
+                <span className="w-1.5 h-1.5 rounded-full bg-[#54b4ff]"></span>
                 Incentivized Inputs
               </div>
               <div className="flex items-center gap-2 text-xs font-semibold text-slate-200">
-                <span className="w-1.5 h-1.5 rounded-full bg-green-500"></span>
+                <span className="w-1.5 h-1.5 rounded-full bg-[#54b4ff]"></span>
                 Tractor Mechanization
               </div>
               <div className="flex items-center gap-2 text-xs font-semibold text-slate-200">
-                <span className="w-1.5 h-1.5 rounded-full bg-green-500"></span>
+                <span className="w-1.5 h-1.5 rounded-full bg-[#54b4ff]"></span>
                 Market Connectivity
               </div>
             </div>
           </div>
           <div className="relative group">
-            <div className="absolute -inset-4 bg-green-500/10 blur-2xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div className="absolute -inset-4 bg-[#54b4ff]/10 blur-2xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
             <div className="grid grid-cols-1 gap-4 relative z-10">
               {initiatives.map((item, i) => (
-                <div key={i} className="p-6 rounded-2xl bg-slate-900 border border-white/5 hover:border-green-500/30 transition-all">
+                <div key={i} className="p-6 rounded-2xl bg-slate-900 border border-white/5 hover:border-[#54b4ff]/30 transition-all">
                   <div className={`w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center mb-4 ${item.color}`}>
                     {item.icon}
                   </div>

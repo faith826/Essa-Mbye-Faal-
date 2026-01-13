@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -289,8 +288,8 @@ const App: React.FC = () => {
             <Stats />
             <div className="max-w-7xl mx-auto px-6 py-20 border-t border-white/5">
               <div className="grid md:grid-cols-3 gap-8">
-                <div onClick={() => setActiveView('agriculture')} className="group cursor-pointer p-8 rounded-3xl bg-slate-900 border border-white/5 hover:border-green-500/30 transition-all">
-                  <h3 className="text-xl font-semibold text-white mb-4 group-hover:text-green-400 transition-colors">Agriculture →</h3>
+                <div onClick={() => setActiveView('agriculture')} className="group cursor-pointer p-8 rounded-3xl bg-slate-900 border border-white/5 hover:border-[#54b4ff]/30 transition-all">
+                  <h3 className="text-xl font-semibold text-white mb-4 group-hover:text-[#54b4ff] transition-colors">Agriculture →</h3>
                   <p className="text-sm text-slate-500">Transforming our farming heritage with modern technology.</p>
                 </div>
                 <div onClick={() => setActiveView('infrastructure')} className="group cursor-pointer p-8 rounded-3xl bg-slate-900 border border-white/5 hover:border-blue-500/30 transition-all">
