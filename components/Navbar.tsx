@@ -40,6 +40,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentView }) => {
   const submenus: Record<string, { id: string; label: string }[]> = {
     contribute: [
       { id: 'donate', label: 'Donate' },
+      { id: 'membership-registration', label: 'Apply for Digital ID' },
       { id: 'join-group', label: 'Join Our Group' },
       { id: 'volunteer', label: 'Volunteering' },
     ],

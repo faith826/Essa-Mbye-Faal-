@@ -90,6 +90,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           <div className="flex flex-col gap-4">
             <h4 className="text-[10px] font-bold text-white uppercase tracking-[0.2em]">Contribute</h4>
             <button onClick={() => onNavigate('donate')} className="text-left text-slate-400 hover:text-blue-400 text-xs font-medium transition-colors">Donate</button>
+            <button onClick={() => onNavigate('membership-registration')} className="text-left text-slate-400 hover:text-blue-400 text-xs font-medium transition-colors">Apply for Digital ID</button>
             <button onClick={() => onNavigate('join-group')} className="text-left text-slate-400 hover:text-blue-400 text-xs font-medium transition-colors">Join Our Group</button>
             <button onClick={() => onNavigate('volunteer')} className="text-left text-slate-400 hover:text-blue-400 text-xs font-medium transition-colors">Volunteering</button>
           </div>
@@ -114,9 +115,14 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         </div>
         
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-[9px] text-slate-600 font-bold tracking-widest uppercase">
-            © 2025 Essa Mbye Faal Campaign. All rights reserved.
-          </p>
+          <div className="flex flex-col items-center md:items-start gap-1">
+            <p className="text-[9px] text-slate-600 font-bold tracking-widest uppercase">
+              © 2025 Essa Mbye Faal Campaign. All rights reserved.
+            </p>
+            <p className="text-[8px] text-blue-500/50 font-black tracking-[0.2em] uppercase">
+              Powered by Fradynex
+            </p>
+          </div>
           <div className="flex gap-6">
             <button 
               onClick={() => onNavigate('privacy-policy')}

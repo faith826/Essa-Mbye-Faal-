@@ -32,4 +32,5 @@ export type ViewType =
   | 'infrastructure'
   | 'history-policies'
   | 'privacy-policy'
-  | 'terms-of-service';
+  | 'terms-of-service'
+  | 'membership-registration';

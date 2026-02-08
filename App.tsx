@@ -12,6 +12,7 @@ import PolicyAide from './components/PolicyAide';
 import VotingProcess from './components/VotingProcess';
 import CandidateFocus from './components/CandidateFocus';
 import JoinGroup from './components/JoinGroup';
+import MembershipRegistration from './components/MembershipRegistration';
 import { ViewType } from './types';
 
 const PrivacyPolicyView = () => (
@@ -322,6 +323,8 @@ const App: React.FC = () => {
         return <JoinGroup />;
       case 'volunteer':
         return <VolunteeringView />;
+      case 'membership-registration':
+        return <MembershipRegistration />;
       case 'privacy-policy':
         return <PrivacyPolicyView />;
       case 'terms-of-service':
