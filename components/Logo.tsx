@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Logo: React.FC<{ className?: string }> = ({ className = "w-20 h-20" }) => {
-  const imageUrl = "https://img.sanishtech.com/u/bb58a019c760d305a10a0996b997dec1.png";
+  const imageUrl = "https://i.postimg.cc/hG427YZk/1885094c-231f-4da5-be21-2cfa17e3b5ac-(1).jpg";
 
   return (
     <div className={`${className} relative flex items-center justify-center transition-all duration-500 hover:scale-110 group`}>
@@ -12,7 +12,7 @@ const Logo: React.FC<{ className?: string }> = ({ className = "w-20 h-20" }) => 
         <img 
           src={imageUrl} 
           alt="App Sobeyaa Logo" 
-          className="w-full h-full object-contain filter drop-shadow-[0_0_12px_rgba(84,180,255,0.3)]"
+          className="w-full h-full object-contain filter drop-shadow-[0_0_12px_rgba(84,180,255,0.3)] rounded-full"
           loading="eager"
           onError={(e) => {
             const target = e.target as HTMLImageElement;

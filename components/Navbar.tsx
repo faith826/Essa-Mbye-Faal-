@@ -8,12 +8,12 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentView }) => {
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setSetScrolled] = useState(false);
   const [openDropdownId, setOpenDropdownId] = useState<string | null>(null);
   const navbarRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
+    const handleScroll = () => setSetScrolled(window.scrollY > 20);
     const handleClickOutside = (event: MouseEvent) => {
       if (navbarRef.current && !navbarRef.current.contains(event.target as Node)) {
         setOpenDropdownId(null);
@@ -77,7 +77,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentView }) => {
           </div>
         </button>
 
-        <div className="hidden lg:flex items-center gap-6 text-[10px] font-bold tracking-[0.1em] text-slate-400">
+        <div className="hidden lg:flex items-center gap-8 text-[13px] font-bold tracking-[0.1em] text-slate-400">
           {navItems.map((item) => (
             item.isDropdown ? (
               <div 
@@ -87,12 +87,12 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentView }) => {
                 onMouseLeave={() => setOpenDropdownId(null)}
               >
                 <button
-                  className={`hover:text-white transition-all uppercase relative py-2 flex items-center gap-1 ${
+                  className={`hover:text-white transition-all uppercase relative py-2 flex items-center gap-1.5 ${
                     isActive(item.id, true) ? 'text-white' : ''
                   }`}
                 >
                   {item.label}
-                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6"/></svg>
                   {isActive(item.id, true) && (
                     <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.5)]"></span>
                   )}
@@ -101,7 +101,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentView }) => {
                 {/* Dropdown Menu */}
                 {openDropdownId === item.id && (
                   <div 
-                    className="absolute top-full left-0 w-52 bg-slate-900 border border-white/10 rounded-xl shadow-2xl py-2 animate-in fade-in slide-in-from-top-2 duration-200"
+                    className="absolute top-full left-0 w-60 bg-slate-900 border border-white/10 rounded-xl shadow-2xl py-2 animate-in fade-in slide-in-from-top-2 duration-200"
                   >
                     {submenus[item.id].map((sub, idx) => (
                       <button
@@ -110,7 +110,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentView }) => {
                           onNavigate(sub.id as ViewType);
                           setOpenDropdownId(null);
                         }}
-                        className={`w-full text-left px-4 py-3 text-[10px] font-bold tracking-wider uppercase hover:bg-white/5 transition-colors ${
+                        className={`w-full text-left px-5 py-3.5 text-[12px] font-bold tracking-wider uppercase hover:bg-white/5 transition-colors ${
                           currentView === sub.id ? 'text-blue-400' : 'text-slate-400'
                         }`}
                       >
@@ -140,7 +140,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentView }) => {
         <div className="flex items-center gap-4">
           <button 
             onClick={() => onNavigate('donate')}
-            className="bg-blue-600 text-white px-6 py-2.5 rounded-xl text-[10px] font-bold tracking-widest hover:bg-blue-500 transition-colors shadow-lg shadow-blue-900/40 active:scale-95 uppercase"
+            className="bg-blue-600 text-white px-7 py-3 rounded-xl text-[12px] font-bold tracking-widest hover:bg-blue-500 transition-colors shadow-lg shadow-blue-900/40 active:scale-95 uppercase"
           >
             Contribute
           </button>

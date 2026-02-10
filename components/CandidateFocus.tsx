@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ViewType } from '../types';
 
@@ -16,7 +15,7 @@ const CandidateFocus: React.FC<CandidateFocusProps> = ({ onNavigate }) => {
             <div className="absolute -inset-4 bg-blue-600/20 blur-3xl rounded-full opacity-50 group-hover:opacity-100 transition-opacity"></div>
             <div className="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl aspect-[4/5] max-w-[450px] mx-auto">
               <img 
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSziqjClezhddGI9yf4f8HMKrppaY3L5M1voqcjxs1Xz5I_ejbt" 
+                src="https://voiceoutdigital.com/wp-content/uploads/2024/12/essa-faal.jpeg" 
                 alt="Essa Mbye Faal" 
                 className="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700"
               />
