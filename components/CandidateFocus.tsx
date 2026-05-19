@@ -15,9 +15,10 @@ const CandidateFocus: React.FC<CandidateFocusProps> = ({ onNavigate }) => {
             <div className="absolute -inset-4 bg-blue-600/20 blur-3xl rounded-full opacity-50 group-hover:opacity-100 transition-opacity"></div>
             <div className="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl aspect-[4/5] max-w-[450px] mx-auto">
               <img 
-                src="https://voiceoutdigital.com/wp-content/uploads/2024/12/essa-faal.jpeg" 
+                src="https://i.postimg.cc/R0Gd8YmG/download-(1).jpg" 
                 alt="Essa Mbye Faal" 
                 className="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700"
+                referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
               <div className="absolute bottom-6 left-6">
@@ -34,7 +35,7 @@ const CandidateFocus: React.FC<CandidateFocusProps> = ({ onNavigate }) => {
                   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
                </div>
                <div className="h-px w-12 bg-blue-600/30"></div>
-               <span className="text-xs font-black text-blue-400 uppercase tracking-[0.3em]">Vote 2025</span>
+               <span className="text-xs font-black text-blue-400 uppercase tracking-[0.3em]">Vote 2026</span>
             </div>
             
             <h2 className="text-6xl md:text-8xl font-black text-white leading-none tracking-tighter mb-6">

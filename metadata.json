@@ -3,5 +3,6 @@
   "description": "A high-end, interactive political campaign landing page for Essa Mbye Faal, featuring a real-time AI Development Aide powered by Gemini for answering constituent questions.",
   "requestFramePermissions": [
     "geolocation"
-  ]
+  ],
+  "majorCapabilities": []
 }

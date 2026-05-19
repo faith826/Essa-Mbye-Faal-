@@ -117,7 +117,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex flex-col items-center md:items-start gap-1">
             <p className="text-[9px] text-slate-600 font-bold tracking-widest uppercase">
-              © 2025 Essa Mbye Faal Campaign. All rights reserved.
+              © 2026 Essa Mbye Faal Campaign. All rights reserved.
             </p>
             <p className="text-[8px] text-blue-500/50 font-black tracking-[0.2em] uppercase">
               Powered by Fradynex

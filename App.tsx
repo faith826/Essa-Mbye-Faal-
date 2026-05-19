@@ -19,7 +19,7 @@ const PrivacyPolicyView = () => (
   <section className="py-24 max-w-4xl mx-auto px-6 animate-in fade-in slide-in-from-bottom-4 duration-700">
     <h2 className="text-4xl font-black text-white mb-8 tracking-tighter uppercase">Privacy Policy</h2>
     <div className="prose prose-invert max-w-none text-slate-400 space-y-6 text-sm md:text-base leading-relaxed">
-      <p>Last Updated: October 2025</p>
+      <p>Last Updated: October 2026</p>
       <p>The Essa Mbye Faal Campaign ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share information about you when you use our website and services.</p>
       
       <h3 className="text-xl font-bold text-white uppercase mt-10">1. Information We Collect</h3>
@@ -44,7 +44,7 @@ const TermsOfServiceView = () => (
   <section className="py-24 max-w-4xl mx-auto px-6 animate-in fade-in slide-in-from-bottom-4 duration-700">
     <h2 className="text-4xl font-black text-white mb-8 tracking-tighter uppercase">Terms of Service</h2>
     <div className="prose prose-invert max-w-none text-slate-400 space-y-6 text-sm md:text-base leading-relaxed">
-      <p>Last Updated: October 2025</p>
+      <p>Last Updated: October 2026</p>
       <p>By accessing or using the Essa Mbye Faal Campaign website, you agree to be bound by these Terms of Service.</p>
       
       <h3 className="text-xl font-bold text-white uppercase mt-10">1. Eligibility</h3>
@@ -103,6 +103,15 @@ const HistoryPoliciesView = ({ onNavigate }: { onNavigate: (view: ViewType) => v
           </div>
         </div>
 
+        <div className="bg-slate-900/50 border border-white/5 p-8 rounded-3xl mb-12">
+          <p className="text-blue-400 font-black text-[10px] tracking-widest uppercase mb-4">Qualifications</p>
+          <div className="grid md:grid-cols-3 gap-6">
+             <div className="flex items-center gap-3"><span className="w-2 h-2 bg-blue-500 rounded-full"></span> <span className="text-slate-200 font-bold">LLB</span> <span className="text-slate-400 text-sm">Fourah Bay College</span></div>
+             <div className="flex items-center gap-3"><span className="w-2 h-2 bg-blue-500 rounded-full"></span> <span className="text-slate-200 font-bold">LLM</span> <span className="text-slate-400 text-sm">Univ. West Indies</span></div>
+             <div className="flex items-center gap-3"><span className="w-2 h-2 bg-blue-500 rounded-full"></span> <span className="text-slate-200 font-bold">ICC</span> <span className="text-slate-400 text-sm">Lead Counsel</span></div>
+          </div>
+        </div>
+
         <div className="space-y-6 text-slate-400 leading-relaxed text-lg">
           <h4 className="text-2xl font-bold text-white uppercase tracking-tight">Biography</h4>
           <p>
@@ -114,7 +123,7 @@ const HistoryPoliciesView = ({ onNavigate }: { onNavigate: (view: ViewType) => v
           <p>
             Essa Mbye Faal began his legal career as a state counsel at the Ministry of Justice in The Gambia in 1994. He was later appointed a judicial affairs officer by the UN in 2002, followed by a successful career at the International Development Law Organization (IDLO). In 2006 Essa was appointed by the International Criminal Court (ICC) to lead the investigations into the Darfur genocide, and in 2011 as an International Defense Lawyer at the ICC where he was Lead Counsel for several high-profile cases.
           </p>
-          <p className="font-bold text-white italic">
+          <p className="font-bold text-white italic py-4 border-l-4 border-blue-600 pl-6 bg-blue-600/5 rounded-r-xl">
             Essa Mbye Faal and the “Turn Around Campaign” humbly request your support so that we can take our country back from the clutches of ineptitude and turn it around for a better Gambia for all.
           </p>
           
@@ -145,7 +154,7 @@ const AboutView = () => (
     <h2 className="text-4xl md:text-6xl font-black text-white mb-8 tracking-tighter">Essa Mbye Faal</h2>
     <div className="grid md:grid-cols-2 gap-12 text-slate-400 leading-relaxed text-lg">
       <p>App Sobeyaa is more than a foundation; it is a movement dedicated to the holistic development of Gambia. Led by Essa Mbye Faal, our mission is to drive sustainable growth through targeted initiatives in agriculture, infrastructure, and social welfare.</p>
-      <p>With a vision for a better Gambia, we focus on integrity, accountability, and real action. Our vision is a future where every citizen has the tools and environment to prosper, starting with 2025.</p>
+      <p>With a vision for a better Gambia, we focus on integrity, accountability, and real action. Our vision is a future where every citizen has the tools and environment to prosper, starting with 2026.</p>
     </div>
   </section>
 );

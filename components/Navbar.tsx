@@ -72,7 +72,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentView }) => {
               ESSA MBYE FAAL
             </span>
             <span className="text-[8px] md:text-[9px] text-[#54b4ff] font-black tracking-[0.3em] uppercase mt-1.5 whitespace-nowrap">
-              FOR PRESIDENT 2025
+              FOR PRESIDENT 2026
             </span>
           </div>
         </button>
