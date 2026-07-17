@@ -521,7 +521,7 @@ const MembershipRegistration: React.FC = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div className="p-6 rounded-2xl bg-slate-950 border border-white/5 hover:border-blue-500/30 transition-all group">
                     <p className="text-[10px] font-black text-slate-500 uppercase mb-2 group-hover:text-blue-500 transition-colors">Mobile Money (Wave)</p>
-                    <p className="text-lg text-white font-black">+220 396 5401</p>
+                    <p className="text-lg text-white font-black">+220 396 540</p>
                   </div>
                   <div className="p-6 rounded-2xl bg-slate-950 border border-white/5 hover:border-blue-500/30 transition-all group">
                     <p className="text-[10px] font-black text-slate-500 uppercase mb-2 group-hover:text-blue-500 transition-colors">Bank Wire (Gambia)</p>

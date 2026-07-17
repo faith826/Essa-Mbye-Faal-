@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Logo: React.FC<{ className?: string }> = ({ className = "w-20 h-20" }) => {
-  const imageUrl = "https://i.postimg.cc/hG427YZk/1885094c-231f-4da5-be21-2cfa17e3b5ac-(1).jpg";
+  const imageUrl = "https://i.postimg.cc/mgrXTssp/updated-logo.png";
 
   return (
     <div className={`${className} relative flex items-center justify-center transition-all duration-500 hover:scale-110 group`}>

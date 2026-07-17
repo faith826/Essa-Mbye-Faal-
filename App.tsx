@@ -35,7 +35,7 @@ const PrivacyPolicyView = () => (
       <p>We do not sell your personal information. We may share information with third-party service providers who perform services on our behalf, such as payment processing and email delivery, or when required by law.</p>
       
       <h3 className="text-xl font-bold text-white uppercase mt-10">5. Contact Us</h3>
-      <p>If you have any questions about this Privacy Policy, please contact us at info@appsobeyaa.com.</p>
+      <p>If you have any questions about this Privacy Policy, please contact us at essambyefaalofficial@gmail.com.</p>
     </div>
   </section>
 );
@@ -248,35 +248,38 @@ const VolunteeringView = () => {
 };
 
 const ContactView = () => (
-  <section className="py-24 max-w-4xl mx-auto px-6 animate-in fade-in slide-in-from-bottom-4 duration-700">
-    <div className="text-center mb-16">
-      <h2 className="text-4xl font-bold text-white mb-4 uppercase tracking-tight">Contact the Campaign</h2>
-      <p className="text-slate-400">Have questions for Essa? We'd love to hear from you.</p>
-    </div>
-    <div className="grid md:grid-cols-3 gap-8 mb-16">
-      <div className="p-6 rounded-2xl bg-slate-900 border border-white/5 text-center">
-        <div className="w-10 h-10 bg-blue-600/20 text-blue-400 rounded-full flex items-center justify-center mx-auto mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        </div>
-        <h4 className="text-white font-semibold mb-2">Phone</h4>
-        <p className="text-xs text-slate-500">+220 396 5401</p>
+  <>
+    <section className="py-24 max-w-4xl mx-auto px-6 animate-in fade-in slide-in-from-bottom-4 duration-700">
+      <div className="text-center mb-16">
+        <h2 className="text-4xl font-bold text-white mb-4 uppercase tracking-tight">Contact the Campaign</h2>
+        <p className="text-slate-400">Have questions for Essa? We'd love to hear from you.</p>
       </div>
-      <div className="p-6 rounded-2xl bg-slate-900 border border-white/5 text-center">
-        <div className="w-10 h-10 bg-blue-600/20 text-blue-400 rounded-full flex items-center justify-center mx-auto mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+      <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="p-6 rounded-2xl bg-slate-900 border border-white/5 text-center">
+          <div className="w-10 h-10 bg-blue-600/20 text-blue-400 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <h4 className="text-white font-semibold mb-2">Phone</h4>
+          <p className="text-xs text-slate-500">+220 396 540</p>
         </div>
-        <h4 className="text-white font-semibold mb-2">Email</h4>
-        <p className="text-xs text-slate-500">info@appsobeyaa.com</p>
-      </div>
-      <div className="p-6 rounded-2xl bg-slate-900 border border-white/5 text-center">
-        <div className="w-10 h-10 bg-blue-600/20 text-blue-400 rounded-full flex items-center justify-center mx-auto mb-4">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div className="p-6 rounded-2xl bg-slate-900 border border-white/5 text-center">
+          <div className="w-10 h-10 bg-blue-600/20 text-blue-400 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </div>
+          <h4 className="text-white font-semibold mb-2">Email</h4>
+          <p className="text-xs text-slate-500">essambyefaalofficial@gmail.com</p>
         </div>
-        <h4 className="text-white font-semibold mb-2">Location</h4>
-        <p className="text-xs text-slate-500">Banjul, The Gambia</p>
+        <div className="p-6 rounded-2xl bg-slate-900 border border-white/5 text-center">
+          <div className="w-10 h-10 bg-blue-600/20 text-blue-400 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h4 className="text-white font-semibold mb-2">Location</h4>
+          <p className="text-xs text-slate-500">Banjul, The Gambia</p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <Newsletter />
+  </>
 );
 
 const App: React.FC = () => {
@@ -292,7 +295,7 @@ const App: React.FC = () => {
       case 'home':
         return (
           <>
-            <Hero />
+            <Hero onNavigate={(view) => setActiveView(view as ViewType)} />
             <CandidateFocus onNavigate={(view) => setActiveView(view as ViewType)} />
             <VotingProcess />
             <Stats />
@@ -322,8 +325,6 @@ const App: React.FC = () => {
         return <Agriculture />;
       case 'infrastructure':
         return <Infrastructure />;
-      case 'news':
-        return <Newsletter />;
       case 'contact':
         return <ContactView />;
       case 'donate':

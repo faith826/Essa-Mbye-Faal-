@@ -33,7 +33,6 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate, currentView }) => {
     { id: 'agriculture', label: 'Agriculture' },
     { id: 'infrastructure', label: 'Infrastructure', isDropdown: true },
     { id: 'contribute', label: 'Contribute', isDropdown: true },
-    { id: 'news', label: 'News' },
     { id: 'contact', label: 'Contact' },
   ];
 

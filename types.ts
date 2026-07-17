@@ -26,7 +26,6 @@ export type ViewType =
   | 'donate' 
   | 'join-group' 
   | 'volunteer' 
-  | 'news' 
   | 'contact' 
   | 'agriculture' 
   | 'infrastructure'
